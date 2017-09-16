@@ -106,12 +106,9 @@
 }
 
 .main__link {
-  clear: right;
   color: white;
   cursor: pointer;
-  display: block;
-  float: right;
-  font-size: 18px;
+
   position: relative;
   text-decoration: none;
 }
@@ -132,6 +129,13 @@
 .main__link:hover:before {
   visibility: visible;
   width: 100%;
+}
+
+.main__link--right {
+  clear: right;
+  display: block;
+  float: right;
+  font-size: 18px;
 }
 
 .main__link:not(:last-of-type) {
