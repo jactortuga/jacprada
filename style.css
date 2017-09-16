@@ -115,7 +115,7 @@
 
 .main__link:before {
   background-color: white;
-  bottom: -1px;
+  bottom: 0;
   content: '';
   height: 2px;
   left: 0;
@@ -136,6 +136,10 @@
   display: block;
   float: right;
   font-size: 18px;
+}
+
+.main__link--right:before {
+  bottom: -1px;
 }
 
 .main__link:not(:last-of-type) {
