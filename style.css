@@ -88,12 +88,14 @@
 
 .main__inner--left {
   font-size: 60px;
-  width: 35%;
+  margin-right: 5%;
+  width: 30%;
 }
 
 .main__inner--center {
   font-size: 28px;
-  width: 45%;
+  margin-right: 5%;
+  width: 50%;
 }
 
 .main__inner--center p:not(:last-of-type) {
@@ -102,7 +104,7 @@
 
 .main__inner--right {
   text-align: right;
-  width: 20%;
+  width: 10%;
 }
 
 .main__link {
@@ -157,4 +159,54 @@
   font-size: 18px;
   text-align: right;
   width: 100%;
+}
+
+/*Responsiveness*/
+@media screen and (max-width: 1350px) {
+  .main__inner--left {
+    font-size: 50px;
+  }
+
+  .main__inner--center {
+      font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .main__central {
+    flex-direction: column;
+  }
+
+  .main__inner--left {
+    margin-right: 0;
+    padding: 50px 0 25px 0;
+    width: 100%;
+  }
+
+  .main__inner--center {
+    margin-right: 0;
+    padding: 25px 0;
+    width: 100%;
+  }
+
+  .main__inner--right {
+    padding: 25px 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .main__link--right {
+    clear: left;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .body {
+    padding: 0 20px;
+  }
+
+  .main {
+      height: auto;
+  }
 }
