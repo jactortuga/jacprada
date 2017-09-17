@@ -217,10 +217,67 @@
 
 @media screen and (max-width: 600px) {
   .body {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
-  /*.main {
-      height: auto;
-  }*/
+  .header__top {
+    height: 75px;
+  }
+
+  .header__title {
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
+
+  .main {
+    min-height: calc(100vh - 115px);
+  }
+
+  .main__inner--left {
+    font-size: 40px;
+  }
+
+  .main__inner--center {
+    font-size: 20px;
+  }
+
+  .main__inner--center p:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  .main__link--right {
+    font-size: 14px;
+  }
+
+  .footer__inner {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__inner--left {
+    padding: 30px 0 15px 0;
+  }
+
+  .main__inner--center {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__title {
+    font-size: 20px;
+  }
+
+  .main__inner--left {
+    font-size: 35px;
+  }
+
+  .main__inner--center {
+    font-size: 16px;
+  }
+
+  .footer__inner {
+    font-size: 14px;
+  }
 }
