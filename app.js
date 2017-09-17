@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var siteLinks = document.getElementsByTagName('a');
+  var randomContainer   = document.getElementById('randomWordContainer');
+  var randomVocabulary  = ['Hello.', 'Ciao.', 'Hej.', 'Hallo.', 'Salut.', 'Ola.', 'Hi.', 'Servus.', 'Aloha.', 'Kia Ora.', 'Namaste.'];
+  var randomMin         = Math.ceil(0);
+  var randomMax         = Math.floor(randomVocabulary.length);
+  var randomIndex       = Math.floor(Math.random() * (randomMax - randomMin)) + randomMin;
+  var randomWord        = randomVocabulary[randomIndex];
 
-  // for (var i = 0; i < siteLinks.length; i++) {
-  //   siteLinks[i].addEventListener('mouseenter', function(){
-  //     this.classList.remove('hover');
-  //   }, false);
-  // }
+  randomContainer.innerHTML = randomWord;
 
 });
