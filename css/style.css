@@ -16,7 +16,7 @@
 }
 
 .body__background {
-  background-image: url('animated_background.gif');
+  background-image: url('../img/animated_background.gif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
